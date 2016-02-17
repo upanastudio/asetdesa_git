@@ -1,0 +1,2 @@
+# asetdesa
+Aplikasi Aset Desa
