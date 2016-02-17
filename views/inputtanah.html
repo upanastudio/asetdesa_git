@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <title>Beranda - Aset Desa </title>
+
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300,700">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./js/libs/css/ui-lightness/jquery-ui-1.9.2.custom.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="./js/plugins/morris/morris.css">
+  <link rel="stylesheet" href="./js/plugins/icheck/skins/minimal/blue.css">
+  <link rel="stylesheet" href="./js/plugins/select2/select2.css">
+  <link rel="stylesheet" href="./js/plugins/fullcalendar/fullcalendar.css">
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="./css/target-admin.css">
+  <link rel="stylesheet" href="./css/custom.css">
+
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div class="navbar">
+
+  <div class="container">
+
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <i class="fa fa-cogs"></i>
+      </button>
+
+      <a class="navbar-brand navbar-brand-image" href="./index.html">
+      <br>
+        <p >Aset Desa Terpadu</p>
+        
+        <!--<img src="./img/logo.png" alt="Site Logo">-->
+      </a>
+
+    </div> <!-- /.navbar-header -->
+
+    <div class="navbar-collapse collapse">
+
+      
+
+      <ul class="nav navbar-nav noticebar navbar-left">
+
+        <li class="dropdown">
+          <a href="./page-notifications.html" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-bell"></i>
+            <span class="navbar-visible-collapsed">&nbsp;Notifications&nbsp;</span>
+            <span class="badge">3</span>
+          </a>
+
+          <ul class="dropdown-menu noticebar-menu" role="menu">
+            <li class="nav-header">
+              <div class="pull-left">
+                Pemberitahuan
+              </div>
+
+              
+            </li>
+
+            <li>
+              <a href="./page-notifications.html" class="noticebar-item">
+                <span class="noticebar-item-image">
+                  <i class="fa fa-cloud-upload text-success"></i>
+                </span>
+                <span class="noticebar-item-body">
+                  <strong class="noticebar-item-title">Data Telah Terkirim</strong>
+                  <span class="noticebar-item-text">20 Templates have been synced to the Mashon Demo instance.</span>
+                  <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 12 minutes ago</span>
+                </span>
+              </a>
+            </li>
+
+
+            <li class="noticebar-menu-view-all">
+              <a href="./page-notifications.html">Lihat seluruh pemberitahuan</a>
+            </li>
+          </ul>
+        </li>
+
+
+        <li class="dropdown">
+          <a href="./page-notifications.html" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-envelope"></i>
+            <span class="navbar-visible-collapsed">&nbsp;Messages&nbsp;</span>
+          </a>
+
+          <ul class="dropdown-menu noticebar-menu" role="menu">                
+            <li class="nav-header">
+              <div class="pull-left">
+                Messages
+              </div>
+
+              <div class="pull-right">
+                <a href="javascript:;">New Message</a>
+              </div>
+            </li>
+
+            <li>
+              <a href="./page-notifications.html" class="noticebar-item">
+                <span class="noticebar-item-image">
+                  <img src="./img/avatars/avatar-1-md.jpg" style="width: 50px" alt="">
+                </span>
+
+                <span class="noticebar-item-body">
+                  <strong class="noticebar-item-title">New Message</strong>
+                  <span class="noticebar-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span>
+                  <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 20 minutes ago</span>
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="./page-notifications.html" class="noticebar-item">
+                <span class="noticebar-item-image">
+                  <img src="./img/avatars/avatar-2-md.jpg" style="width: 50px" alt="">
+                </span>
+
+                <span class="noticebar-item-body">
+                  <strong class="noticebar-item-title">New Message</strong>
+                  <span class="noticebar-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span>
+                  <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 5 hours ago</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="noticebar-menu-view-all">
+              <a href="./page-notifications.html">View All Messages</a>
+            </li>
+          </ul>
+        </li>
+
+
+        <li class="dropdown">
+          <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-exclamation-triangle"></i>
+            <span class="navbar-visible-collapsed">&nbsp;Alerts&nbsp;</span>
+          </a>
+
+          <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">                
+            <li class="nav-header">
+              <div class="pull-left">
+                Alerts
+              </div>
+            </li>
+
+            <li class="noticebar-empty">                  
+              <h4 class="noticebar-empty-title">No alerts here.</h4>
+              <p class="noticebar-empty-text">Check out what other makers are doing on Explore!</p>                
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">   
+
+        <li>
+          <a href="javascript:;">Panduan Aplikasi</a>
+        </li>    
+          
+  
+
+        <li class="dropdown navbar-profile">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+            <img src="./img/avatars/avatar-1-xs.jpg" class="navbar-profile-avatar" alt="">
+            <span class="navbar-profile-label">sid@mydesa.co.id &nbsp;</span>
+            <i class="fa fa-caret-down"></i>
+          </a>
+
+          <ul class="dropdown-menu" role="menu">
+
+            <li>
+              <a href="./page-profile.html">
+                <i class="fa fa-user"></i> 
+                &nbsp;&nbsp;Profil Admin
+              </a>
+            </li>
+
+            <li>
+              <a href="./page-settings.html">
+                <i class="fa fa-cogs"></i> 
+                &nbsp;&nbsp;Settings
+              </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li>
+              <a href="./account-login.html">
+                <i class="fa fa-sign-out"></i> 
+                &nbsp;&nbsp;Logout
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
+      </ul>
+
+       
+
+
+
+       
+
+    </div> <!--/.navbar-collapse -->
+
+  </div> <!-- /.container -->
+
+</div> <!-- /.navbar -->
+
+  <div class="mainbar">
+
+  <div class="container">
+
+    <button type="button" class="btn mainbar-toggle" data-toggle="collapse" data-target=".mainbar-collapse">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <div class="mainbar-collapse collapse">
+
+      <ul class="nav navbar-nav mainbar-nav">
+
+        <li class="active">
+          <a href="./index.html">
+            <i class="fa fa-dashboard"></i>
+            Rekap
+          </a>
+        </li>
+
+        <li class="dropdown ">
+          <a href="#about" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+            <i class="fa fa-desktop"></i>
+            Pengadaan dan  Pendataan
+            <span class="caret"></span>
+          </a>
+
+          <ul class="dropdown-menu">   
+            <li><a href="./inputtanah.html"><i class="fa fa-user nav-icon"></i> Tanah</a></li>
+            <li><a href="./inputtanah.html"><i class="fa fa-bars nav-icon"></i> Peralatan dan Mesin</a></li>
+            <li><a href="./inputtanah.html"><i class="fa fa-asterisk nav-icon"></i> Gedung dan Bangunan</a></li>
+            <li><a href="./inputtanah.html"><i class="fa fa-tasks nav-icon"></i> Jalan, Irigasi Dan Jaringan</a></li>
+            <li><a href="./inputtanah.html"><i class="fa fa-font nav-icon"></i> Aset Tetap Lainnya</a></li>
+            <li><a href="./inputtanah.html"><i class="fa fa-list-alt nav-icon"></i> Konstruksi dalam Pengerjaan</a></li>
+            
+            
+          </ul>
+        </li>
+
+        <li class="dropdown ">
+          <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+          <i class="fa fa-align-left"></i> 
+          Laporan 
+            <span class="caret"></span>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">Laporan </li>
+
+            <li>
+              <a href="./laporan.html">
+              <i class="fa fa-location-arrow nav-icon"></i> 
+              Laporan Penyusutan Nilai
+              </a>
+            </li>
+
+            <li>
+              <a href="./laporan.html">
+              <i class="fa fa-location-arrow nav-icon"></i> 
+              Laporan Inventaris Barang
+              </a>
+            </li>
+            <li>
+              <a href="laporan.html">
+              <i class="fa fa-location-arrow nav-icon"></i> 
+              Mutasi Aset Desa
+              </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li class="dropdown-header">Neraca </li>
+
+            <li>
+              <a href="./neraca.html">
+              <i class="fa fa-table"></i> 
+              &nbsp;&nbsp;Pertanggung Jawaban
+              </a>
+            </li>
+
+            
+          </ul>
+        </li>
+
+        <li class="dropdown ">
+          <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+            <i class="fa fa-files-o"></i>
+            Kirim Data
+            <span class="caret"></span>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a href="./kirim.html"><i class="fa fa-user nav-icon"></i> Pengiriman Laporan</a></li>
+            
+          </ul>
+        </li>  
+
+      
+
+      </ul>
+
+    </div> <!-- /.navbar-collapse -->   
+
+  </div> <!-- /.container --> 
+
+</div> <!-- /.mainbar -->
+
+
+
+<!--ISI -->
+
+<div class="container">
+
+  <div class="content">
+
+      <div class="content-container">
+
+      
+
+      <div class="content-header">
+        <h2 class="content-header-title">Pemasukan Data Aset Desa</h2>
+        <ol class="breadcrumb">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="javascript:;">Pengadaan dan Pendataan</a></li>
+          <li class="active">Tanah</li>
+        </ol>
+      </div> <!-- /.content-header -->
+
+      
+
+      <div class="row">
+
+        <div class="col-md-3 col-sm-4">
+      
+          <ul id="myTab" class="nav nav-pills nav-stacked">
+            <li class="active">
+              <a href="#profile-tab" data-toggle="tab">
+                <i class="fa fa-user"></i> 
+                &nbsp;&nbsp;Tanah
+              </a>
+            </li>
+            <li>
+              <a href="#profile-tab" data-toggle="tab">
+                <i class="fa fa-lock"></i> 
+                &nbsp;&nbsp;Peralatan dan Mesin
+              </a>
+            </li>
+            <li>
+              <a href="#profile-tab" data-toggle="tab">
+                <i class="fa fa-envelope"></i> 
+                &nbsp;&nbsp;Gedung dan Bangunan
+              </a>
+            </li>
+            <li>
+              <a href="#profile-tab" data-toggle="tab">
+                <i class="fa fa-dollar"></i> 
+                &nbsp;&nbsp;Jalan, Irigasi dan Jaringan
+              </a>
+            </li>
+            <li>
+              <a href="#profile-tab" data-toggle="tab">
+                <i class="fa fa-signal"></i> 
+                &nbsp;&nbsp;Aset Tetap Lainnya
+              </a>
+            </li>
+            <li>
+              <a href="#profile-tab" data-toggle="tab">
+                <i class="fa fa-signal"></i> 
+                &nbsp;&nbsp;Konstruksi dalam Pengerjaan
+              </a>
+            </li>
+          </ul>
+
+          <br>
+
+        </div> <!-- /.col -->
+
+        <div class="col-md-9 col-sm-8">
+
+          <div class="tab-content stacked-content">
+
+            <div class="tab-pane fade in active" id="profile-tab">
+              
+              <h3 class="">Pendataan Aset Desa</h3>
+
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+              <hr />
+
+              <br />
+
+              <form action="./page-settings.html" class="form-horizontal">
+
+                <div class="form-group">
+
+             
+
+                </div> <!-- /.form-group -->
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Kode Barang</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="user-name" value="jumpstartui" class="form-control" disabled />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Nama Barang</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="first-name" value="Rod" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Merk/ Tipe</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="first-name" value="Rod" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+                <div class="form-group">
+
+                  <label class="col-md-3">No Sertifikat/ No Pabrik / No Casis</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="first-name" value="Rod" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Bahan</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="first-name" value="Rod" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Asal Perolehan</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="first-name" value="Rod" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Tanggal Beli</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="first-name" value="Rod" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Ukuran Barang/ Konstruksi</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="first-name" value="Rod" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+                     <div class="form-group">
+
+                  <label class="col-md-3">Satuan</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="first-name" value="Rod" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Keadaan Barang </label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="first-name" value="Rod" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Jumlah  Barang</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="first-name" value="Rod" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Harga </label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="first-name" value="Rod" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+                <br />
+
+                  <label class="col-md-3">Gambar</label>
+
+                  <div class="col-md-7">
+                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                      <div class="fileupload-new thumbnail" style="width: 180px; height: 180px;"><img src="./img/avatars/avatar-large-1.jpg" alt="Profile Avatar" /></div>
+                      <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 200px; line-height: 20px;"></div>
+                      <div>
+                        <span class="btn btn-default btn-file"><span class="fileupload-new">Pilih Gambar</span><span class="fileupload-exists">/ Ubah</span><input type="file" /></span>
+                        <a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Hapus</a>
+                      </div>
+                    </div>
+                  </div> <!-- /.col -->
+
+
+                <br />
+
+                <div class="form-group">
+
+                  <div class="col-md-7 col-md-push-3">
+                    <button type="submit" class="btn btn-primary">Masukkan Data</button>
+                    &nbsp;
+                    <button type="reset" class="btn btn-default">Batalkan</button>
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+              </form>
+
+
+            </div> <!-- /.tab-pane --> 
+
+            <div class="tab-pane fade" id="password-tab">
+
+              <h3 class="">Change Your Password</h3>
+
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+
+              <br />
+
+              <form action="./page-settings.html" class="form-horizontal">
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Old Password</label>
+
+                  <div class="col-md-7">
+                    <input type="password" name="old-password" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+                <hr />
+
+                <div class="form-group">
+
+                  <label class="col-md-3">New Password</label>
+
+                  <div class="col-md-7">
+                    <input type="password" name="new-password-1" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+                <div class="form-group">
+
+                  <label class="col-md-3">New Password Confirm</label>
+
+                  <div class="col-md-7">
+                    <input type="password" name="new-password-2" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+                <br />
+
+                <div class="form-group">
+
+                  <div class="col-md-7 col-md-push-3">
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    &nbsp;
+                    <button type="reset" class="btn btn-default">Cancel</button>
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+              </form>
+            </div> <!-- /.tab-pane -->
+
+
+              <div class="tab-pane fade" id="messaging">
+                <h3>Message Settings</h3>
+                  <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+              </div> <!-- /.tab-pane -->
+
+              <div class="tab-pane fade" id="payments">
+                <h3>Payments Settings</h3>
+                  <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+              </div> <!-- /.tab-pane -->
+
+              <div class="tab-pane fade" id="reports">
+                <h3>Reports Settings</h3>
+                  <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+              </div> <!-- /.tab-pane -->
+
+          </div> <!-- /.tab-content -->
+
+        </div> <!-- /.col -->
+
+      </div> <!-- /.row -->
+
+
+      
+
+    </div> <!-- /.content-container -->
+      
+  </div> <!-- /.content -->
+
+</div> <!-- /.container -->
+
+<!--ISI-->
+
+
+<footer class="footer">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-3">
+
+        <h4>Tentang Aset Desa Terpadu </h4>
+
+        <br>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>  
+
+        <hr>    
+
+        <p>&copy; 2014 Jumpstart Themes.</p>
+
+      </div> <!-- /.col -->
+
+      <div class="col-sm-3"> 
+
+        <h4>Bantuan</h4>
+
+        <br>
+
+        <ul class="icons-list">
+          <li>
+            <i class="fa fa-angle-double-right icon-li"></i>
+            <a href="javascript:;">Panduan</a>
+          </li>
+          <li>
+            <i class="fa fa-angle-double-right icon-li"></i>
+            <a href="javascript:;">Ajukan Pertanyaan</a>
+          </li>
+          <li>
+            <i class="fa fa-angle-double-right icon-li"></i>
+            <a href="javascript:;">Video Pelatihan</a>
+          <li>
+            <i class="fa fa-angle-double-right icon-li"></i>
+            <a href="javascript:;">Saran dan kritik</a>
+          </li>
+        </ul>          
+
+      </div> <!-- /.col -->
+
+  
+
+    </div> <!-- /.row -->
+
+  </div> <!-- /.container -->
+  
+</footer>
+
+  <script src="./js/libs/jquery-1.10.1.min.js"></script>
+  <script src="./js/libs/jquery-ui-1.9.2.custom.min.js"></script>
+  <script src="./js/libs/bootstrap.min.js"></script>
+
+  <!--[if lt IE 9]>
+  <script src="./js/libs/excanvas.compiled.js"></script>
+  <![endif]-->
+  
+  <!-- Plugin JS -->
+  <script src="./js/plugins/icheck/jquery.icheck.js"></script>
+  <script src="./js/plugins/select2/select2.js"></script>
+  <script src="./js/libs/raphael-2.1.2.min.js"></script>
+  <script src="./js/plugins/morris/morris.min.js"></script>
+  <script src="./js/plugins/sparkline/jquery.sparkline.min.js"></script>
+  <script src="./js/plugins/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="./js/plugins/fullcalendar/fullcalendar.min.js"></script>
+
+  <!-- App JS -->
+  <script src="./js/target-admin.js"></script>
+  
+  <!-- Plugin JS -->
+  <script src="./js/demos/dashboard.js"></script>
+  <script src="./js/demos/calendar.js"></script>
+  <script src="./js/demos/charts/morris/area.js"></script>
+  <script src="./js/demos/charts/morris/donut.js"></script>
+
+  
+
+
+  
+</body>
+</html>
